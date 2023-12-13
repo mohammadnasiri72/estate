@@ -5,11 +5,11 @@ import Link from 'next/link';
 export default function Gallery() {
     console.log(data.homes);
   return (
-    <div className='flex flex-wrap justify-center mt-20'>
+    <div className='flex flex-wrap justify-center mt-20 pr-20'>
         {
             data.homes.slice(0 , 6).map((e)=>{
                 return(
-                    <div key={e.id} className='w-1/4 m-4 border text-center'>
+                    <div key={e.id} className='lg:w-1/4 sm:w-1/3 m-4 border text-center'>
                         <img className='w-full' src={e.img} alt="" />
                         <button style={{transform:"translateY(-50%)"}} className='bg-slate-800 w-5/6 text-white py-2'>{e.title}</button>
                         <div className='flex mt-4'>

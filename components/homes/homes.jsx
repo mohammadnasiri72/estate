@@ -45,20 +45,20 @@ export default function AllHomes() {
     }
     return (
         <>
-        <div className='flex justify-around mt-20'>
-            <select className='w-36 p-1' onChange={(e)=> sort(e.target.value)}>
+        <div className='flex flex-wrap justify-around mt-20 pr-20'>
+            <select className='w-36 p-1 mx-2 sm:mt-0 mt-3' onChange={(e)=> sort(e.target.value)}>
                 <option value="-1">انتخاب کنید</option>
                 <option value="room">براساس تعداد اتاق</option>
                 <option value="meterage">براساس متراژ</option>
                 <option value="price">براساس قیمت</option>
             </select>
-            <input onChange={(e)=> search(e.target.value)} className='w-56 border outline-none border-black rounded-md p-1' placeholder='جستجو...' type="text" />
+            <input onChange={(e)=> search(e.target.value)} className='w-56 border outline-none border-black rounded-md p-1 mx-2 sm:mt-0 mt-3' placeholder='جستجو...' type="text" />
         </div>
-            <div className='px-28 flex flex-wrap justify-center mt-4'>
+            <div className='pr-20 flex flex-wrap justify-center mt-4'>
                 {
                     home.slice(startIndex, endIndex).map((e) => {
                         return (
-                            <div key={e.id} className='w-1/4 m-4 border text-center'>
+                            <div key={e.id} className='lg:w-1/4 sm:w-1/3 m-4 border text-center'>
                                 <img className='w-full' src={e.img} alt="" />
                                 <button style={{ transform: "translateY(-50%)" }} className='bg-slate-800 w-5/6 text-white py-2'>{e.title}</button>
                                 <div className='flex mt-4'>

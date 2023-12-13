@@ -9,10 +9,10 @@ export default function Header() {
   return (
     <>
     <SideBar />
-      <div className='h-screen'>
-        <div className='flex'>
-          <div className='main-img-header w-2/3 bg-slate-800 h-screen px-28 bg-no-repeat bg-cover bg-blend-multiply'>
-            <div className='flex justify-center items-center h-1/2'>
+      <div className=''>
+        <div className='flex flex-wrap'>
+          <div className='h-auto main-img-header md:w-2/3 w-full bg-slate-800 px-28 bg-no-repeat bg-cover bg-blend-multiply'>
+            <div className='flex justify-center items-center py-10'>
               <p className='text-brown text-3xl mx-1'>nexter</p>
               <img className='w-16' src={"/img/favicon.png"} alt="" />
             </div>
@@ -31,7 +31,7 @@ export default function Header() {
               <BiLogoEbay className='text-6xl text-white' />
             </div>
           </div>
-          <div className='w-1/3 bg-slate-900 h-screen flex justify-center items-center flex-col'>
+          <div className='md:w-1/3 w-full bg-slate-900 flex justify-center items-center flex-col py-10'>
             <p className='text-amber-900 text-xl font-semibold'>سه مالک برتر</p>
             <div className='flex items-center mt-4 justify-start w-1/2'>
               <img className='w-16 rounded-full' src={"/img/realtor-1.jpeg"} alt="" />

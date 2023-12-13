@@ -2,28 +2,28 @@ import React from 'react'
 
 export default function News() {
   return (
-    <div className='flex flex-wrap justify-center py-3'>
-        <div className='w-1/4 mx-10 mt-10'>
+    <div className='flex flex-wrap justify-center py-3 pr-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>بهترین خانه های لوکس جهان</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>
-        <div className='w-1/4 mx-10 mt-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>همه خانه ها در مکان های برتر</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>
-        <div className='w-1/4 mx-10 mt-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>خانه جدید در یک هفته</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>
-        <div className='w-1/4 mx-10 mt-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>فقط بهترین خواص</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>
-        <div className='w-1/4 mx-10 mt-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>پرداخت های ایمن در بعدی</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>
-        <div className='w-1/4 mx-10 mt-10'>
+        <div className='md:w-1/4 w-full px-10 sm:p-3 mx-10 mt-10'>
             <h3 className='font-bold'>1% مشاوران املاک برتر</h3>
             <p className='mt-3'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         </div>

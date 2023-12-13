@@ -23,6 +23,12 @@ body{
 }
 .main-img-feature{
     background-image: url("../public/img/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50vh;
+}
+
+
+@media (min-width:768px) {
+    .text-feature{
+        height: 50vh;
+    }
 }
