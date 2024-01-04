@@ -1,100 +1,144 @@
 {
-  "homes": [
+  "services": [
     {
       "id": 1,
-      "title": "خانه ویلایی",
-      "img": "/img/house-1.jpeg",
-      "roomCount": 6,
-      "meterage": 250,
-      "price": 2000000
+      "title": "Fastest Door Delivery",
+      "description": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "img": "/img/service-1.jpg",
+      "icon": "faTruck"
     },
     {
       "id": 2,
-      "title": "خانه فروشی",
-      "img": "/img/house-2.jpeg",
-      "roomCount": 2,
-      "meterage": 98,
-      "price": 3000000
+      "title": "Fresh Coffee Beans",
+      "description": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "img": "/img/service-2.jpg",
+      "icon": "faCoffee"
     },
     {
       "id": 3,
-      "title": "خانه اجاره‌ای",
-      "img": "/img/house-3.jpeg",
-      "roomCount": 1,
-      "meterage": 180,
-      "price": 2500000
+      "title": "Best Quality Coffee",
+      "description": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "img": "/img/service-3.jpg",
+      "icon": "faMedal"
     },
     {
       "id": 4,
-      "title": "سوییت",
-      "img": "/img/house-4.jpeg",
-      "roomCount": 5,
-      "meterage": 210,
-      "price": 500000
+      "title": "Online Table Booking",
+      "description": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "img": "/img/service-4.jpg",
+      "icon": "faTable"
+    }
+  ],
+  
+  "menu": [
+    {
+      "id": 1,
+      "title": "Black Coffee",
+      "price": 5,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 5,
+      "off": 0,
+      "type": "cold",
+      "img": "/img/menu-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Hot Chocolete",
+      "price": 4,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 4.4,
+      "off": 0,
+      "type": "hot",
+      "img": "/img/menu-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ice Cream",
+      "price": 6,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/img/menu-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Tea",
+      "price": 3,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 5,
+      "off": 0,
+      "type": "hot",
+      "img": "/img/menu-4.jpeg"
     },
     {
       "id": 5,
-      "title": "باغ",
-      "img": "/img/house-5.jpeg",
-      "roomCount": 8,
-      "meterage": 290,
-      "price": 1200000
+      "title": "Chocolate Milk",
+      "price": 4,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 4.8,
+      "off": 0,
+      "type": "hot",
+      "img": "/img/menu-5.jpeg"
     },
     {
       "id": 6,
-      "title": "واحد آپارتمان",
-      "img": "/img/house-6.jpeg",
-      "roomCount": 2,
-      "meterage": 150,
-      "price": 800000
+      "title": "Banana Milk",
+      "price": 12,
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/img/menu-6.jpeg"
+    }
+  ],
+
+  "newsLetters": [
+    {
+      "email": "nasiri.mohammadreza92@yahoo.com",
+      "id": 1
+    }
+  ],
+
+  "reserve": [
+  
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "username": "Q_Yolme",
+      "productID": 1,
+      "body": "Wonderful coffee ❤️",
+      "profile": "/img/testimonial-1.jpg"
     },
     {
-      "id": 7,
-      "title": "خانه ویلایی",
-      "img": "/img/house-7.jpg",
-      "roomCount": 5,
-      "meterage": 300,
-      "price": 2200000
+      "id": 2,
+      "username": "Amin Saeedi",
+      "productID": 2,
+      "body": "Perfect coffee 🙋‍♂️❤️",
+      "profile": "/img/testimonial-2.jpg"
     },
     {
-      "id": 8,
-      "title": "خانه اجاره‌ای",
-      "img": "/img/house-8.jpg",
-      "roomCount": 3,
-      "meterage": 200,
-      "price": 5000000
+      "id": 3,
+      "username": "Sasan Moqaddas",
+      "productID": 1,
+      "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
+      "profile": "/img/testimonial-3.jpg"
     },
     {
-      "id": 9,
-      "title": "خانه اجاره‌ای",
-      "img": "/img/house-9.jpg",
-      "roomCount": 4,
-      "meterage": 180,
-      "price": 5500000
+      "id": 4,
+      "username": "Alireza Rezaei",
+      "productID": 2,
+      "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
+      "profile": "/img/testimonial-4.jpg"
     },
     {
-      "id": 10,
-      "title": "باغ ویلا",
-      "img": "/img/house-10.jpg",
-      "roomCount": 3,
-      "meterage": 230,
-      "price": 2260000
-    },
-    {
-      "id": 11,
-      "title": "رهن خانه",
-      "img": "/img/house-11.jpg",
-      "roomCount": 4,
-      "meterage": 350,
-      "price": 9800000
-    },
-    {
-      "id": 12,
-      "title": "خانه فروشی",
-      "img": "/img/house-12.jpg",
-      "roomCount": 1,
-      "meterage": 315,
-      "price": 2300000
+      "id": 5,
+      "username": "Mmd Mohammadi",
+      "productID": 1,
+      "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
+      "profile": "/img/testimonial-4.jpg"
     }
   ]
 }

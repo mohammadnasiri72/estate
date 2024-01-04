@@ -6,29 +6,48 @@
     font-family: gandom;
     src: url("./../public/fonts/Gandom.ttf");
 }
+.text-black-50{
+    color: rgba(0, 0, 0, 0.5);
+}
 body{
     font-family: gandom;
-    direction: rtl;
+    overflow-x: hidden;
 }
-.text-brown{
-    color: #e2ae71;
+.home-img1{
+    background-image: url("../public/img/carousel-1.jpg");
+    background-color: rgb(90, 53, 43);
+    background-position: center;
 }
-.main-img-header{
-    background-image: url("./../public/img/story-1.jpeg");
-    background-color: rgba(0, 0, 0, 0.788);
+.home-img2{
+    background-image: url("../public/img/carousel-2.jpg");
+    background-color: rgb(90, 53, 43);
+    background-position: center;
 }
-
-.bg-dark{
-    background-color: rgba(0, 0, 0, 0.74);
+.bg-color-white{
+    background-image: url("./../public/img/overlay-bottom.png");
+    background-size: 30% 100%;    
 }
-.main-img-feature{
-    background-image: url("../public/img/back.jpg");
-    height: 50vh;
+.bg-color-black{
+    background-image: url("./../public/img/overlay-top.png");
+    background-size: 30% 100%;
 }
-
-
-@media (min-width:768px) {
-    .text-feature{
-        height: 50vh;
-    }
+.home-page{
+    background-image: url("../public/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(43, 43, 43);
+    background-blend-mode: multiply;
+    height: 70vh;
+}
+.footer{
+    background-image: url("../public/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-blend-mode: multiply;
+    padding-bottom: 10px;
+}
+.box-reserve{
+    background-image: url("../public/img/bg.jpg");
+    background-color: #33211d;
 }

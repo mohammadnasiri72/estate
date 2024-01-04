@@ -1,63 +1,56 @@
-import React from 'react'
-import { FcBbc } from "react-icons/fc";
-import { TfiYoutube } from "react-icons/tfi";
-import { BiLogoEtsy, BiLogoEbay } from "react-icons/bi";
-import Link from 'next/link';
-import SideBar from './sideBar/sideBar';
+import Link from 'next/link'
+import { TiThMenuOutline } from "react-icons/ti";
+import { FaSortDown , FaCaretRight } from "react-icons/fa";
+import React, { useState } from 'react'
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false)
+  const [showPages, setShowPages] = useState(false)
+  const showMenuHandler = () => {
+    setShowMenu(!showMenu)
+  }
+  const showAccordionPages = () => {
+    setShowPages(!showPages)
+  }
+  const menuItemHandler = () => {
+    setShowMenu(false)
+    setShowPages(false)
+  }
   return (
-    <>
-    <SideBar />
-      <div className=''>
-        <div className='flex flex-wrap'>
-          <div className='h-auto main-img-header md:w-2/3 w-full bg-slate-800 px-28 bg-no-repeat bg-cover bg-blend-multiply'>
-            <div className='flex justify-center items-center py-10'>
-              <p className='text-brown text-3xl mx-1'>nexter</p>
-              <img className='w-16' src={"/img/favicon.png"} alt="" />
-            </div>
-            <p className='text-brown'>خانه خودتان :</p>
-            <p className='text-white text-2xl font-bold mt-3'>با خرید خانه نهایت آزادی را احساس کنید</p>
-            <Link href="/homes"><button className='bg-amber-900 text-white p-3 mt-20 font-bold'>املاک ما را مشاهده کنید</button></Link>
-            <div className='flex items-center justify-center'>
-              <hr className='w-5/12' />
-              <span className='text-white w-1/6 flex justify-center'>دیده میشود در</span>
-              <hr className='w-5/12' />
-            </div>
-            <div className='flex justify-between items-center'>
-              <FcBbc className='text-8xl' />
-              <TfiYoutube className='text-6xl text-white' />
-              <BiLogoEtsy className='text-6xl text-white' />
-              <BiLogoEbay className='text-6xl text-white' />
+    <div className='bg-neutral-900 lg:bg-transparent lg:absolute w-full z-10'>
+      <div className='flex flex-wrap justify-between items-center px-10 py-5 w-full'>
+        <Link className='sm:text-5xl text-3xl font-bold text-white' href={"/"}>Next-Coffee</Link>
+        <div className='justify-center lg:flex hidden'>
+          <Link onClick={menuItemHandler} className='mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300' href={"/"}>Home</Link>
+          <Link onClick={menuItemHandler} className='mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300' href={"/about"}>About</Link>
+          <Link onClick={menuItemHandler} className='mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300' href={"/services"}>Service</Link>
+          <Link onClick={menuItemHandler} className='mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300' href={"/menu"}>Menu</Link>
+          <div className='relative'>
+
+            <span onClick={showAccordionPages} className='flex mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>pages <FaSortDown /></span>
+            <div style={{ display: showPages ? "block" : "none" }} className='py-2 bg-white absolute mt-2'>
+              <Link onClick={menuItemHandler} href={"/reservation"}><p className='text-black mx-2 px-2 hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>Reservation</p></Link>
+              <Link onClick={menuItemHandler} href={"/testimonial"}><p className='text-black mx-2 px-2 hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>Testimonial</p></Link>
             </div>
           </div>
-          <div className='md:w-1/3 w-full bg-slate-900 flex justify-center items-center flex-col py-10'>
-            <p className='text-amber-900 text-xl font-semibold'>سه مالک برتر</p>
-            <div className='flex items-center mt-4 justify-start w-1/2'>
-              <img className='w-16 rounded-full' src={"/img/realtor-1.jpeg"} alt="" />
-              <div className='mx-2'>
-                <p className='text-white font-bold'>مهدی ایلخانی نصب</p>
-                <p className='text-white text-xs'>869 فروش خانه</p>
-              </div>
-            </div>
-            <div className='flex items-center mt-4 justify-start w-1/2'>
-              <img className='w-16 rounded-full' src={"/img/realtor-2.jpeg"} alt="" />
-              <div className='mx-2'>
-                <p className='text-white font-bold'>کوثر بهشتی</p>
-                <p className='text-white text-xs'>249 فروش خانه</p>
-              </div>
-            </div>
-            <div className='flex items-center mt-4 justify-start w-1/2'>
-              <img className='w-16 rounded-full' src={"/img/realtor-3.jpeg"} alt="" />
-              <div className='mx-2'>
-                <p className='text-white font-bold'>عرشیا احسنی</p>
-                <p className='text-white text-xs'>130 فروش خانه</p>
-              </div>
-            </div>
-
+          <Link onClick={() => setShowMenu(false)} className='mx-2 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300' href={"/contact"}>Contact</Link>
+        </div>
+        <div onClick={showMenuHandler} className='lg:hidden block'><TiThMenuOutline className='text-white text-3xl cursor-pointer' /></div>
+      </div>
+      <div style={{ maxHeight: showMenu ? "300px" : "0" }} className='duration-300 px-10 overflow-hidden lg:hidden block'>
+        <p className='my-1 py-1'><Link onClick={menuItemHandler} className='my-1 py-1 px-2 text-white hover:text-amber-900 duration-300' href={"/"}>Home</Link></p>
+        <p className='my-1 py-1'><Link onClick={menuItemHandler} className='my-1 py-1 px-2 text-white hover:text-amber-900 duration-300' href={"/about"}>About</Link></p>
+        <p className='my-1 py-1'><Link onClick={menuItemHandler} className='my-1 py-1 px-2 text-white hover:text-amber-900 duration-300' href={"/services"}>Service</Link></p>
+        <p className='my-1 py-1'><Link onClick={menuItemHandler} className='my-1 py-1 px-2 text-white hover:text-amber-900 duration-300' href={"/menu"}>Menu</Link></p>
+        <div className='relative flex'>
+          <span onClick={showAccordionPages} className='flex items-center my-1 py-1 px-2 text-white hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>pages <FaCaretRight /></span>
+          <div style={{ display: showPages ? "block" : "none" , transform: "translateX(60%)" }} className='py-2 bg-white absolute top-0'>
+            <Link onClick={menuItemHandler} href={"/reservation"}><p className='text-black mx-2 px-2 hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>Reservation</p></Link>
+            <Link onClick={menuItemHandler} href={"/testimonial"}><p className='text-black mx-2 px-2 hover:text-amber-900 focus:text-amber-900 duration-300 cursor-pointer'>Testimonial</p></Link>
           </div>
         </div>
+        <p className='my-1 py-1'><Link onClick={menuItemHandler} className='my-1 py-1 px-2 text-white hover:text-amber-900 duration-300' href={"/contact"}>Contact</Link></p>
       </div>
-    </>
+    </div>
   )
 }
